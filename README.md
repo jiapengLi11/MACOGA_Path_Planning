@@ -1,14 +1,25 @@
 # MACOGA Path Planning
 
+![Python](https://img.shields.io/badge/Python-3.8-blue)
+![ACO](https://img.shields.io/badge/Algorithm-ACO-orange)
+![GA](https://img.shields.io/badge/Algorithm-GA-purple)
+![Task](https://img.shields.io/badge/Task-Path%20Planning-green)
+
 ## Overview
 
 This repository is a path-planning experiment that combines ant colony optimization and genetic algorithms, followed by path simplification.
 
-## Tech Stack
+## Preview
 
-- Python
-- NumPy
-- Matplotlib
+| Initial Environment | Final Comparison |
+| --- | --- |
+| ![env](results/01_initial_environment.png) | ![comparison](results/05_path_comparison.png) |
+
+## Highlights
+
+- hybrid ACO + GA path-planning pipeline
+- path simplification as a final refinement stage
+- saved visual outputs for each phase of the experiment
 
 ## Project Structure
 
