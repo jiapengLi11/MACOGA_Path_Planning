@@ -1,19 +1,24 @@
 # MACOGA Path Planning
 
+## Overview
+
 This repository is a path-planning experiment that combines ant colony optimization and genetic algorithms, followed by path simplification.
 
-The current implementation builds a grid environment, runs an ACO search phase, refines the path with GA, simplifies the result, and saves comparison figures under `results/`.
+## Tech Stack
 
-## Included
+- Python
+- NumPy
+- Matplotlib
 
-- `main.py`: full experiment pipeline and result generation
+## Project Structure
+
+- `main.py`: complete experiment pipeline and figure generation
 - `environment.py`: grid environment definition
 - `aco.py`: ant colony optimization stage
-- `ga.py`: genetic algorithm optimization stage
+- `ga.py`: genetic algorithm stage
 - `path_simplification.py`: path simplification logic
 - `utils.py`: plotting and helper functions
-- `results/`: generated visualization outputs
-- `requirements.txt`: minimal environment notes
+- `results/`: generated comparison images
 
 ## Workflow
 
@@ -23,11 +28,11 @@ The default pipeline is:
 2. find an initial path using ACO
 3. optimize the path using GA
 4. simplify the optimized path
-5. save plots for comparison and analysis
+5. save plots for analysis
 
 ## Setup
 
-The repository currently lists these dependencies:
+The repository currently lists:
 
 ```text
 Python 3.8
@@ -35,18 +40,13 @@ numpy==1.21.6
 matplotlib==3.5.2
 ```
 
-Install them in your environment before running the project.
-
 ## Run
 
 ```bash
 python main.py
 ```
 
-Generated figures will be saved under the `results/` directory.
-
 ## Notes
 
-- The repository also contains a presentation file and a work-report directory from the surrounding project context.
+- The repository also contains a presentation file and a work-report directory.
 - This project is best viewed as an experiment reproduction / verification repository rather than a packaged application.
-- A useful next improvement would be documenting the algorithm parameters and adding a brief comparison with the original paper or report.
